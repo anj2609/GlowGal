@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 90%;
+    }
+
+    .product-detail {
+        width: 90%;
+    }
+}
