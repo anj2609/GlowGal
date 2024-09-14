@@ -1,16 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product List</title>
+    <title>GlowGal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <p class="title">GlowGal</p>
+    <body>
+        
+        <div id="navlist">
+            <a href="#">Home</a>
+            <a href="#">Our Products</a>
+            <a href="#">Discounts</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+    
+            
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Search Products"
+                           name="search">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
     <style>
-        .title{
-            background-color:pink;
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navlist {
+    background-color: #c39ea0;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navlist a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navlist a:hover {
+    background-color: #f8e5e5;
+    color: white;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: #f8e5e5;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button i {
+    font-size: 18px;
+}
+
+.search button:hover {
+    background: #f8e5e5;
+    color: white;
+}
+
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h1 {
+    color: #f8e5e5;
+}
+
+
+@media screen and (max-width: 600px) {
+    #navlist {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .search input[type="text"] {
+        margin-right: 10px;
+        width: auto;
+    }
+
+    .search button {
+        padding: 4px 8px;
+    }
+
+    .search button i {
+        font-size: 14px;
+    }
+
+    #navlist a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+}
+
+  .title{
+            background-color:#c39ea0;
             font-size:100px;
             font-weight:bold;
             color:white;
@@ -19,8 +143,10 @@
             padding-top:50px;
             text-shadow:50px;
             opacity: 0;
-            animation: fadeIn 4s forwards;
+            animation: fadeIn 3s forwards;
             text-align:center;
+            margin:0;
+            margin-bottom:10px;
         }
         @media (max-width: 768px){
             .title{
